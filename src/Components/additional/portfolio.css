@@ -1,0 +1,133 @@
+.img{
+    background:url('../../img/macbook.jpg') no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+}
+.bgn{
+    margin-top: 20%;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+.bgn h1 span{
+    padding: 0px 15px;
+    border:1px solid white;
+}
+.socialMedia{
+    position: fixed;
+    top:35%;
+    left:1%;
+    display: grid;
+    border-radius: 10px;
+    border-top:1px solid lightgrey;
+    border-bottom:1px solid lightgrey;
+    padding: 20px;
+}
+
+.socialMedia i {
+    color:rgba(121, 121, 121, 0.959);
+    font-size: 25px;
+    padding: 15px 0%;
+    cursor: pointer;
+}
+
+.socialMedia i:hover{
+    color: green;
+}
+
+.developer{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.developer em{
+    text-align: justify;
+    background: rgb(248, 248, 167);
+}
+.developer em::before {
+    content: open-quote;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: fantasy;
+    background:rgb(238, 238, 238)
+}
+.developer em::after {
+    content: close-quote;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: fantasy;
+    background:rgb(238, 238, 238)
+}
+
+.developer img{
+    border-radius: 50%;
+    width:30%;
+    height: 30%;
+    box-shadow: 0 2px 7px 0  rgba(0, 0, 0, 0.5), 0 3px 5px 0 rgba(0, 0, 0, 0.8)
+}
+
+.content h4,.content p{
+    text-transform: uppercase;
+}
+
+.content{
+    position: sticky;
+    padding: 30px;
+}
+
+.Media{
+    padding: 20px;
+}
+
+.Media i{
+    display: inline;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.Media i:hover{
+    color: green;
+}
+
+.data{
+    display: flex;
+}
+.data .card{
+    margin: 10px;
+}
+
+@media (max-width:1200px){
+    .bgn{
+        margin-top: 10%;
+    }
+    .bgn h1{
+        display: grid;
+        font-size: 20px;
+    }
+    .bgn h6{
+        font-size: 10px;
+    }
+}
+@media (max-width:900px){
+    .socialMedia{
+        display: none;
+    }
+    .data{
+        display: inline;
+    }
+    .data .card{
+        margin: 10px;
+    }
+    .img{
+        background:url('../../img/macbook.jpg') no-repeat;
+        background-size: 100%;
+        min-height: 0vh;
+        background-attachment: fixed;
+    }
+    .bgn{
+        margin-top: -5%;
+    }
+}
